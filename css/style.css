@@ -104,5 +104,50 @@ section .container .user .formBx form .signup a {
   text-decoration: none;
   color: #677eff;
 }
+section .container.active .signupBx {
+  pointer-events: initial;
+}
+section .container.active .signupBx .formBx {
+  left: 0;
+}
+section .container.active .signupBx .imgBox {
+  left: 0;
+}
+section .container .signinBx .formBx {
+  left: 0;
+}
+section .container .signinBx .imgBox {
+  left: 0%;
+}
+section .container.active .signinBx {
+  pointer-events: initial;
+}
+section .container.active .signinBx .formBx {
+  left: 100%;
+}
+section .container.active .signinBx .imgBox {
+  left: -100%;
+}
+section .container .signupBx {
+  pointer-events: none;
+}
+section .container .signupBx .formBx {
+  left: 100%;
+}
+section .container .signupBx .imgBox {
+  left: -100%;
+}
+
+@media (max-width: 991px) {
+  section .container {
+    max-width: 500px;
+  }
+  section .container .user .formBx {
+    width: 100%;
+  }
+  section .container .imgBox {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

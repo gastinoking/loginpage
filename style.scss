@@ -109,6 +109,80 @@ section{
                         }
                     }
             }
+
+
+            
+        }
+
+        &.active{
+          
+            .signupBx{
+                pointer-events: initial     ;
+                .formBx{
+                     left: 0;
+                }
+                .imgBox{
+                    left: 0;
+                }
+            }
+
+            
+        }
+
+
+        .signinBx{
+            .formBx{
+                left: 0;
+           }
+
+           .imgBox{
+            left: 0%;
+        }
+        }
+
+        &.active{
+          
+            .signinBx{
+                pointer-events: initial     ;
+                .formBx{
+                     left: 100%;
+                }
+                .imgBox{
+                    left: -100%;
+                }
+            }
+
+            
+        }
+
+
+        .signupBx{
+            pointer-events: none;
+            .formBx{
+                
+                left: 100%;
+                
+            }
+            .imgBox{
+                left: -100%;
+               
+            }
         }
     }
+}
+
+@media(max-width:991px){
+  section{
+      .container{
+          max-width: 500px;
+        .user{
+            .formBx{
+                width: 100%;
+            }
+        }
+          .imgBox{
+                display: none;
+          }
+      }
+  }
 }
